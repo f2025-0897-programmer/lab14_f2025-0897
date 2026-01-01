@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: #f39c12;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+    gap: 30px;
+}
+
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;  
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 90%;
+    }
+}
+
+
+
+
+.content {
+    padding: 30px;
+    background: white;
+    margin: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #000;
+    color: white;
+}
+
+td, th {
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+.contact-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #f39c12;
+}
+
+
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+footer a {
+    color: #f39c12;
+    text-decoration: none;
+}
